@@ -1,0 +1,115 @@
+$colorFondo: #d8f0eb;
+$colorTitulo: #65bdad;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: $colorTitulo
+}
+
+header {
+    background-color: $colorFondo;
+    height: 600px;
+
+    .header__logo {
+        z-index: 10;
+    }
+
+    .nav {
+        position: relative;
+        z-index: 10;
+
+        li {
+            /*width: 25%;
+            position: relative;*/
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                text-shadow: 2px 2px 4px #000000;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 4px;
+                transition: background-size 0.5s;
+            }
+        }
+    }
+
+    .carousel {
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        .carousel-inner {
+            top: 0;
+            left: 0;
+            height: 600px !important;
+        }
+
+        .carousel-item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.nav li a:hover,
+a:focus {
+    /*color: #8cddce;*/
+    background-size: 100% 2px;
+}
+
+main {
+    background-color: $colorFondo;
+
+    .main__texto--centrado {
+        display: table;
+        overflow: hidden;
+        text-align: center;
+
+        h2 {
+            color: $colorTitulo;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    /*.seccion--animacion {
+        overflow-x: hidden
+    }*/
+}
+
+#nosotros{
+    margin: 3%;
+}
+
+footer {
+    /* background-color: #AEE1E1; */
+    background-image: url("images/logoFull.png"), linear-gradient(to top, #83c0ca, #d8f0eb);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+@import "_menu"
