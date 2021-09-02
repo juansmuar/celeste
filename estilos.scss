@@ -150,4 +150,21 @@ footer a{
     padding-right: 15rem;
 }
 
+@media (max-width: 600px) {
+    label {
+        margin-right: 0rem;
+    }
+    .mail {
+        margin-top: 1rem;
+    }
+    .submit {
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+    .socials {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }  
+}
+
 @import "_menu"
