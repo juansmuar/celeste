@@ -18,6 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- enlaces a los archivos en internet CDN - fin -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -30,12 +31,11 @@
 
 <body>
 
-  <header class="header container-fluid"> <!--Seccion 1 -->
-    <div class="row">
-      <nav class="navbar navbar-expand-md justify-content-center fixed-top"> <!-- Links -->
+  <header class="header"> <!--Seccion 1 -->
+      <nav class="navbar navbar-expand-md justify-content-center"> <!-- Links -->
         <div class="container fluid">
           <a href="index.html" class="navbar-brand">
-            <img src="images/typoBlanco.png" alt="logo" id="logoHeader" class="logoHeader">
+            <img src="images/typoBlanco.png" alt="logo" id="logoHeader">
           </a>
           <ul data-aos="zoom-out" class="navbar-nav nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -78,7 +78,6 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
   </header>
 
 
@@ -132,41 +131,32 @@
     </div>
   </main>
 
-  <footer>
-    <!--Seccion 6 -->
-    <div id="contacto">
-      <h1 id="subtitulo">Contáctanos</h1>
-      <br>
-      <p>Puedes escribirnos a nuestro WhatsApp: 3193030511<br>
-        <br>
-        O déjanos tus datos y nos pondremos en contacto contigo
-      </p>
-      <br>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre"><br>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido"><br>
-
-        <label for="email">E-mail:</label>
-        <input type="email" name="email"><br>
-
-        <label for="celular">Celular:</label>
-        <input type="number" name="celular"><br><br>
-
-        <label for="select">Deseas que te contactemos vía:</label>
-        <select name="opcion">
-          <option value="whats">WhatsApp</option>
-          <option value="email">E-mail</option>
-        </select><br><br>
-
-        <label for="checkbox">Suscribirme:</label>
-        <input type="checkbox" id="checkbox"><br><br>
-
-        <input type="submit">
-        <input type="reset">
-      </form>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Suscribete!</h3>
+        <label for="email">E-mail</label>
+        <input class="mail" type="text">
+        <input class="submit" type="submit">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center pt-lg-5 pb-lg-4 pt-sm-4 pb-sm-2">
+        <h3>Siguenos!</h3>
+        <div class="row">
+          <div class="col-12 d-flex flex-row justify-content-around socials">
+            <a href="">
+              <i class="fab fa-instagram fa-3x icon"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-whatsapp fa-3x icon"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-facebook fa-3x icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 

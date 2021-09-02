@@ -15,12 +15,18 @@ h1 {
   color: #65bdad;
 }
 
+h3 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem;
+}
+
 header {
   background-color: #d8f0eb;
   height: 600px;
 }
 
-header .header__logo {
+header .navbar-brand {
   z-index: 10;
 }
 
@@ -100,14 +106,50 @@ main .main__texto--centrado div {
 }
 
 footer {
-  /* background-color: #AEE1E1; */
-  background-image: url("images/logoFull.png"), -webkit-gradient(linear, left bottom, left top, from(#83c0ca), to(#d8f0eb));
-  background-image: url("images/logoFull.png"), linear-gradient(to top, #83c0ca, #d8f0eb);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto;
-  text-align: center;
-  padding: 2%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#83c0ca), to(#d8f0eb));
+  background: linear-gradient(to top, #83c0ca, #d8f0eb);
+  padding: 3rem 2rem;
+}
+
+label {
+  color: #65bdad;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.mail {
+  border-radius: 1rem;
+  border: none;
+  width: 20rem;
+  height: 2rem;
+}
+
+.submit {
+  margin-left: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #65bdad;
+  border: none;
+  padding: .5rem 2rem;
+  border-radius: 1.5rem;
+}
+
+footer a {
+  color: #65bdad;
+  text-decoration: none;
+}
+
+.icon {
+  color: #13a1f3;
+}
+
+.icon:hover {
+  color: #65bdad;
+}
+
+.socials {
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 @media only screen and (min-width: 100px) {
