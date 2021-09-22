@@ -1,46 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+  <!-- enlaces a los archivos en internet CDN - incio -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- enlaces a los archivos en internet CDN - fin -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="contacto.css">
+  <!--Link a la hoja de estilos -->
+
+  <title>C O N T A C T O - C e l e s t e</title>
 </head>
+
 <body>
-    <div id="contacto">
+  <header class="header">
+    <!--Seccion 1 -->
+    <nav class="navbar navbar-expand-md justify-content-center">
+      <!-- Links -->
+      <div class="container fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logoFull.png" alt="logo" id="logoHeader">
+        </a>
+        <ul data-aos="zoom-out" class="navbar-nav nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#tutoriales">Tutoriales</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid">
+    <div id="contacto" class="row">
+      <div class="col-12 text-center">
         <h1 id="subtitulo">Contáctanos</h1>
         <br>
-        <p>Puedes escribirnos a nuestro WhatsApp: 3193030511<br>
-          <br>
+        <p>Puedes escribirnos a nuestro WhatsApp: +573004949148<br>
           O déjanos tus datos y nos pondremos en contacto contigo
         </p>
         <br>
+      </div>
+      <div class="col-12 text-center">
         <form>
           <label for="nombre">Nombre:</label>
           <input type="text" name="nombre"><br>
-  
+    
           <label for="apellido">Apellido:</label>
           <input type="text" name="apellido"><br>
-  
-          <label for="email">E-mail:</label>
+    
+          <label for="email">Correo:</label>
           <input type="email" name="email"><br>
-  
+    
           <label for="celular">Celular:</label>
           <input type="number" name="celular"><br><br>
-  
+    
           <label for="select">Deseas que te contactemos vía:</label>
           <select name="opcion">
             <option value="whats">WhatsApp</option>
             <option value="email">E-mail</option>
           </select><br><br>
-  
+    
           <label for="checkbox">Suscribirme:</label>
           <input type="checkbox" id="checkbox"><br><br>
-  
-          <input type="submit">
-          <input type="reset">
+    
+          <input class="submit" value="Enviar" type="submit">
+          <input class="reset" type="reset">
         </form>
       </div>
-    
+    </div>
+  </main>
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center pt-lg-5 pb-lg-4 pt-sm-4 pb-sm-2">
+        <h3>Siguenos!</h3>
+        <div class="row">
+          <div class="col-12 d-flex flex-row justify-content-around socials">
+            <a href="https://www.instagram.com/celestereposteria/?hl=es" target="_blank">
+              <i class="fab fa-instagram fa-3x icon"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+573004949148&text=Hola, Necesito mas informacion!" target="_blank">
+              <i class="fab fa-whatsapp fa-3x icon"></i>
+            </a>
+            <a href="https://www.facebook.com/pages/category/Product-Service/celestereposteria-104167057963371/" target="_blank">
+              <i class="fab fa-facebook fa-3x icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
 </body>
+
 </html>

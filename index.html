@@ -2,82 +2,82 @@
 <html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <!-- enlaces a los archivos en internet CDN - incio -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- enlaces a los archivos en internet CDN - fin -->
 
-    <!-- enlaces a los archivos en internet CDN - incio -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- enlaces a los archivos en internet CDN - fin -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <!--Link a la hoja de estilos -->
 
-    <link rel="stylesheet" href="estilos.css">
-    <!--Link a la hoja de estilos -->
-
-    <title>C E L E S T E</title>
-  </head>
+  <title>C E L E S T E - R e p o s t e r i a</title>
+</head>
 
 <body>
 
-  <header class="header"> <!--Seccion 1 -->
-      <nav class="navbar navbar-expand-md justify-content-center"> <!-- Links -->
-        <div class="container fluid">
-          <a href="index.html" class="navbar-brand">
-            <img src="images/typoBlanco.png" alt="logo" id="logoHeader">
-          </a>
-          <ul data-aos="zoom-out" class="navbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tutoriales">Tutoriales</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div id="carouselHeader" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselHeader" data-slide-to="1"></li>
-          <li data-target="#carouselHeader" data-slide-to="2"></li>
+  <header class="header">
+    <!--Seccion 1 -->
+    <nav class="navbar navbar-expand-md justify-content-center">
+      <!-- Links -->
+      <div class="container fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/typoBlanco.png" alt="logo" id="logoHeader">
+        </a>
+        <ul data-aos="zoom-out" class="navbar-nav nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tutoriales">Tutoriales</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/cakeHeader.jpg" alt="Cake">
-          </div>
-          <div class="carousel-item">
-            <img src="images/macaroonsHeader.jpg" alt="Macaroons">
-          </div>
-          <div class="carousel-item">
-            <img src="images/tartaHeader.jpg" alt="Tarta">
-          </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#carouselHeader" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselHeader" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
+    </nav>
+
+    <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselHeader" data-slide-to="1"></li>
+        <li data-target="#carouselHeader" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/cakeHeader.jpg" alt="Cake">
+        </div>
+        <div class="carousel-item">
+          <img src="images/macaroonsHeader.jpg" alt="Macaroons">
+        </div>
+        <div class="carousel-item">
+          <img src="images/tartaHeader.jpg" alt="Tarta">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#carouselHeader" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselHeader" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </header>
 
 
@@ -93,22 +93,46 @@
       <!--Seccion 3 -->
       <!-- <h2 id="subtitulo">Menu</h2> -->
       <div class="menu__contenedor">
-        <div class="menu__imagen--dimension imagen1"></div>
-        <div class="menu__imagen--dimension imagen2"></div>
-        <div class="menu__imagen--dimension imagen3"></div>
-        <div class="menu__imagen--dimension imagen4"></div>
-        <div class="menu__imagen--dimension imagen5"></div>
+        <div class="menu__imagen--dimension imagen1">
+          <div class="col text-center">
+            <a class="btn btn--styles btn--position" href="contacto.html" role="button">COMPRAR</a>
+          </div>
+        </div>
+        <div class="menu__imagen--dimension imagen2">
+          <div class="col text-center">
+            <a class="btn btn--styles btn--position" href="contacto.html" role="button">COMPRAR</a>
+          </div>
+        </div>
+        <div class="menu__imagen--dimension imagen3">
+          <div class="col text-center">
+            <a class="btn btn--styles btn--position" href="contacto.html" role="button">COMPRAR</a>
+          </div>
+        </div>
+        <div class="menu__imagen--dimension imagen4">
+          <div class="col text-center">
+            <a class="btn btn--styles btn--position" href="contacto.html" role="button">COMPRAR</a>
+          </div>
+        </div>
+        <div class="menu__imagen--dimension imagen5">
+          <div class="col text-center">
+            <a class="btn btn--styles btn--position" href="contacto.html" role="button">COMPRAR</a>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="row featurette main__texto--centrado container-fluid" id="nosotros">
       <div class="col-md-7">
         <h1 class="featurette-heading" id="subtitulo">Nosotros</h1>
-        <p class="lead"><h2>En Celeste creemos en las cosas hechas con amor, por eso, todos nuestros pedidos los hacemos cuidadosamente
-          bajo pedido. Para que lleguen a tu mesa siempre frescos.</h2></p>
+        <p class="lead">
+          <h2>En Celeste creemos en las cosas hechas con amor, por eso, todos nuestros pedidos los hacemos
+            cuidadosamente
+            bajo pedido. Para que lleguen a tu mesa siempre frescos.</h2>
+        </p>
       </div>
       <div class="col-md-5">
-        <img class="featurette-image img-responsive center-block" src="images/pieSeccion.jpg" height="480px" width="500px" alt="Generic placeholder image">
+        <img class="featurette-image img-responsive center-block" src="images/pieSeccion.jpg" height="480px"
+          width="500px" alt="Generic placeholder image">
       </div>
     </div>
 
@@ -118,14 +142,13 @@
         <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine"
           class="seccion--animacion col-sm-12 col-md-6 col-lg-6">
           <h1 class="text-center" id="subtitulo">Tutoriales</h1><br>
-          <h3 class="text-center">Próximamente...</h3>
-          <p class="text-center">Nos estamos preparando para traerte los mejores tutoriales.<br>
-            Mientras tanto te invitamos a disfrutar esta playlist super cool:</p>
+          <h3 class="text-center">Hermoso y delicioso pastel de cumpleaños!</h3>
+          <p class="text-center">Cada semana te traeremos una receta diferente para que la hagas en casa.<br>
+          Suscribete para ser el primero en eterarte cuando subamos un nuevo video!</p>
         </div>
         <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine"
           class="seccion--animacion embed-responsive embed-responsive-16by9 col-sm-12 col-md-5 col-lg-5">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5qap5aO4i9A" allow="autoplay"
-            allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4ysnS5xH7Qk" allow="autoplay" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -135,9 +158,12 @@
     <div class="row">
       <div class="col-12 text-center">
         <h3>Suscribete!</h3>
-        <label for="email">E-mail</label>
-        <input class="mail" type="text">
-        <input class="submit" type="submit">
+        <!-- <form action="enviar.php" method="POST"> -->
+          <form>
+          <label for="email">Correo</label>
+          <input type="email" name="email" id="email" class="email" placeholder="Escribe tu correo" required>
+          <input class="submit" value="Enviar" type="submit">
+        </form>
       </div>
     </div>
     <div class="row">
@@ -145,13 +171,13 @@
         <h3>Siguenos!</h3>
         <div class="row">
           <div class="col-12 d-flex flex-row justify-content-around socials">
-            <a href="">
+            <a href="https://www.instagram.com/celestereposteria/?hl=es" target="_blank">
               <i class="fab fa-instagram fa-3x icon"></i>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=+573004949148&text=Hola, Necesito mas informacion!" target="_blank">
               <i class="fab fa-whatsapp fa-3x icon"></i>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/pages/category/Product-Service/celestereposteria-104167057963371/" target="_blank">
               <i class="fab fa-facebook fa-3x icon"></i>
             </a>
           </div>

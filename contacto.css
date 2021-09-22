@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #65bdad;
+  }
+  
+  h3 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  header {
+    background-color: #d8f0eb;
+    height: 15rem;
+  }
+  
+  header .navbar-brand {
+    z-index: 10;
+  }
+  
+  header .navbar-nav {
+    position: relative;
+    z-index: 10;
+  }
+  
+  header .navbar-nav li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  header .navbar-nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 4px;
+    transition: background-size 0.5s;
+  }
+  
+  
+  .nav li a:hover,
+  a:focus {
+    /*color: #8cddce;*/
+    background-size: 100% 2px;
+  }
+  
+  main {
+    background-color: #d8f0eb;
+    /*.seccion--animacion {
+          overflow-x: hidden
+      }*/
+  }
+  
+  main .main__texto--centrado {
+    display: table;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  main .main__texto--centrado h2 {
+    color: #65bdad;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  main .main__texto--centrado div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  #nosotros {
+    margin: 3%;
+  }
+  
+  footer {
+    background: linear-gradient(to top, #83c0ca, #d8f0eb);
+    padding: 3rem 2rem;
+  }
+  
+  label {
+    color: #65bdad;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .email {
+    border-radius: 1rem;
+    border: none;
+    width: 20rem;
+    height: 2rem;
+  }
+  
+  .submit {
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #65bdad;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .reset {
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #65bdad;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+  }
+  
+  footer a {
+    color: #65bdad;
+    text-decoration: none;
+  }
+  
+  .icon {
+    color: #13a1f3;
+  }
+  
+  .icon:hover {
+    color: #65bdad;
+  }
+  
+  .socials {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      background-color: #d8f0eb;
+      height: 25rem;
+    }
+    header .carousel {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    header .carousel .carousel-inner {
+      top: 0;
+      left: 0;
+      height: 25rem;
+    }
+    header .carousel .carousel-item img {
+      width: 100%;
+    }
+    label {
+      margin-right: 0rem;
+    }
+    .mail {
+      margin-top: 1rem;
+    }
+    .submit {
+      margin-top: 1rem;
+      margin-left: 0rem;
+    }
+    .socials {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+

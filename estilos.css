@@ -23,19 +23,19 @@ h3 {
 
 header {
   background-color: #d8f0eb;
-  height: 600px;
+  height: 30rem;
 }
 
 header .navbar-brand {
   z-index: 10;
 }
 
-header .nav {
+header .navbar-nav {
   position: relative;
   z-index: 10;
 }
 
-header .nav li {
+header .navbar-nav li {
   /*width: 25%;
             position: relative;*/
   font-family: 'Open Sans', sans-serif;
@@ -43,7 +43,7 @@ header .nav li {
   display: inline-block;
 }
 
-header .nav li a {
+header .navbar-nav li a {
   text-decoration: none;
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
@@ -65,7 +65,7 @@ header .carousel {
 header .carousel .carousel-inner {
   top: 0;
   left: 0;
-  height: 600px !important;
+  height: 30rem;
 }
 
 header .carousel .carousel-item img {
@@ -118,7 +118,7 @@ label {
   margin-right: 1rem;
 }
 
-.mail {
+.email {
   border-radius: 1rem;
   border: none;
   width: 20rem;
@@ -152,7 +152,24 @@ footer a {
   padding-right: 15rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  header {
+    background-color: #d8f0eb;
+    height: 25rem;
+  }
+  header .carousel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  header .carousel .carousel-inner {
+    top: 0;
+    left: 0;
+    height: 25rem;
+  }
+  header .carousel .carousel-item img {
+    width: 100%;
+  }
   label {
     margin-right: 0rem;
   }
@@ -171,6 +188,7 @@ footer a {
 
 @media only screen and (min-width: 100px) {
   .menu__contenedor {
+    position: relative;
     width: 100%;
     height: auto;
     display: -ms-grid;
@@ -218,10 +236,19 @@ footer a {
     background-size: cover;
     background-position: center;
   }
+  .menu__contenedor .btn--position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 100px);
+            transform: translate(-50%, 100px);
+    -ms-transform: translate(-50%, 100px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .menu__contenedor {
+    position: relative;
     width: 100%;
     height: auto;
     display: -ms-grid;
@@ -298,6 +325,24 @@ footer a {
     background-size: cover;
     background-position: center;
   }
+  .menu__contenedor .btn--position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 150px);
+            transform: translate(-50%, 150px);
+    -ms-transform: translate(-50%, 150px);
+  }
+}
+
+.btn--styles {
+  background-color: transparent;
+  border-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .menu__imagen--dimension:hover {
